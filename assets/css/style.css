@@ -1,0 +1,37 @@
+.jumbotron{
+    background-color: lightgoldenrodyellow;
+    border-bottom: 2px solid lightgrey;
+   
+}
+
+.card-header {
+    background-color: lightgoldenrodyellow;
+   
+}
+
+.stk {
+    margin: 5px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+ #addinfo {
+    border: 0;
+    padding: 0;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#addinfo:hover {
+    
+    color: blue;
+} 
+
