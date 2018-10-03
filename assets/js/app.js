@@ -18,7 +18,6 @@ const displayInfo = function () {
         const stockPrice = response.quote.latestPrice;
         const logo = response.logo.url;
 
-
         //creating a divBody to hold the information
         const divBody = $('<div>');
         divBody.addClass('card');
@@ -32,7 +31,6 @@ const displayInfo = function () {
         const additional = $(`<button id ='addinfo'> Details... </button> <br>`)
 
         // Appending the information to our info div in the html
-
         $('#info').append(`<h5 class="card-header">Company Information</h5>`);
 
         divContent.append(logoHolder, nameHolder, symbolHolder, priceHolder, additional);
@@ -49,11 +47,9 @@ const displayInfo = function () {
 
         //looping through the news array to grab the headlines
         for (let i = 0; i < companyNews.length; i++) {
-
             const headline = response.news[i].headline;
             const url = response.news[i].url;
             newsContent.append(`<p> <a href = "${url}" target="_blank"> ${headline} </a> </p>`);
-
         }
 
         $('#news').append(`<h5 class="card-header">Top News</h5>`);
@@ -75,20 +71,19 @@ const displayInfo = function () {
                 const tags = response.tags;
                 const website = response.website;
 
-
                 const ceoHolder = $('<p>').text(`CEO: ${CEO}`);
                 const descHolder = $('<p>').text(`Description: ${desc}`);
                 const industryHolder = $('<p>').text(`Industry: ${industry}`);
                 const tagsHolder = $('<p>').text(`Tags: ${tags}`);
                 const websiteHolder = $('<p>').html(`Website: <a href = "${website}" target="_blank" >${website} </a>`);
 
+                //appending all the holders to the content div
                 divContent.append(ceoHolder, descHolder, industryHolder, tagsHolder, websiteHolder);
             })
 
         }
 
         $('#addinfo').on('click', additionalInfo);
-
 
     });
 
@@ -102,7 +97,6 @@ const render = function () {
 
     // Deleting the stocks prior to adding new stocks
     $('#buttons').empty();
-
 
     for (let i = 0; i < stocksList.length; i++) {
 

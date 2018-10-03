@@ -1,12 +1,10 @@
 .jumbotron{
     background-color: lightgoldenrodyellow;
     border-bottom: 2px solid lightgrey;
-   
 }
 
 .card-header {
     background-color: lightgoldenrodyellow;
-   
 }
 
 .stk {
@@ -31,7 +29,6 @@ img {
 }
 
 #addinfo:hover {
-    
     color: blue;
 } 
 
